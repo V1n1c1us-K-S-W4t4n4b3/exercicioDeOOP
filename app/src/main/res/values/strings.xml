@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">exercicioDeOOP</string>
+    <string name="text_nasc">Nascimento</string>
+    <string name="contato1">Vinicius Watanabe</string>
+    <string name="contato2">Victor Hugo</string>
+    <string name="contato3">Lucas Febatis</string>
+    <string name="contato4">Cintia Kikugava</string>
+    <string name="contato5">Mauricio Kazuya</string>
+    <string name="contato6">Andressa Roque</string>
+    <string name="contato7">Ariane Salermo</string>
+    <string name="contato8">Lavinia</string>
+    <string name="contato9">Claudia Rodrigues</string>
+    <string name="contato10">Fake Contato</string>
+    <string name="idade_1">25 anos</string>
+    <string name="idade_2">20 anos</string>
+    <string name="idade_3">25 anos</string>
+    <string name="idade_4">45 anos</string>
+    <string name="idade_5">47 anos</string>
+    <string name="idade_6">29 anos</string>
+    <string name="idade_7">29 anos</string>
+    <string name="idade_8">18 anos</string>
+    <string name="idade_9"> anos</string>
+    <string name="idade_10"> XXX anos</string>
+    <string name="data_de_nasc1">03/05/1998</string>
+    <string name="data_de_nasc2">08/09/2003</string>
+    <string name="data_de_nasc3"></string>
+    <string name="data_de_nasc4">18/12/1977</string>
+    <string name="data_de_nasc5">19/02/1976</string>
+    <string name="data_de_nasc6">12/07/1994</string>
+    <string name="data_de_nasc7"></string>
+    <string name="data_de_nasc8">11/04/2005</string>
+    <string name="data_de_nasc9"></string>
+    <string name="data_de_nasc10">00/00/0000</string>
 </resources>
