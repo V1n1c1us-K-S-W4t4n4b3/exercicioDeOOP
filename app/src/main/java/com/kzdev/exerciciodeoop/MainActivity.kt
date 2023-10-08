@@ -27,11 +27,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun addDataSource() {
-        val dataContato = DataContato.createDataSet()
-        this.adapterContato.setDataSet(dataContato)
-    }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.home -> {
@@ -40,6 +35,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun addDataSource() {
+        val dataContato = DataContato.createDataSet()
+        this.adapterContato.setDataSet(dataContato)
     }
 
     private fun initRecyclerView() {
