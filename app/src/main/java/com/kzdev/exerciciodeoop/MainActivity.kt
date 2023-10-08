@@ -10,16 +10,17 @@ import com.kzdev.exerciciodeoop.ListName.DataContato
 import com.kzdev.exerciciodeoop.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
 
     private lateinit var adapterContato: ContactAdapter
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.title = "Meus Contatos"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         initRecyclerView()
@@ -45,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initRecyclerView() {
 
-        this.adapterContato = ContactAdapter { contato ->
+        this.adapterContato = ContactAdapter {
             openPerfil()
 
         }

@@ -56,7 +56,7 @@ class ContactAdapter(private val onItemClicked: (Contato) -> Unit) :
         fun bind(contato: Contato, onItemClicked: (Contato) -> Unit) {
             contatoName.text = contato.name
             contatoData.text = contato.data
-            contatoText.setText(R.string.text_nasc)
+            contatoText.setText(R.string.text_nasc_Contact)
 
             itemView.setOnClickListener {
                 onItemClicked(contato)
