@@ -1,6 +1,7 @@
 package com.kzdev.exerciciodeoop
 
 import android.R
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -44,15 +45,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun initRecyclerView() {
 
-        this.adapterContato = ContactAdapter()
+        this.adapterContato = ContactAdapter { contato ->
+            openPerfil()
 
+        }
 
         binding.rvList.layoutManager = LinearLayoutManager(this@MainActivity)
         binding.rvList.adapter = this.adapterContato
-
-
-
     }
 
-
+    private fun openPerfil() {
+        val intent = Intent(this@MainActivity, ContactPerfilActivity::class.java)
+        startActivity(intent)
+    }
 }

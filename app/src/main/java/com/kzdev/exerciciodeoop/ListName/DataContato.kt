@@ -4,9 +4,9 @@ import com.kzdev.exerciciodeoop.model.Contato
 
 class DataContato {
 
-    companion object  {
+    companion object {
 
-        fun createDataSet(): ArrayList<Contato>{
+        fun createDataSet(): ArrayList<Contato> {
 
             val list = ArrayList<Contato>()
 

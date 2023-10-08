@@ -8,7 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.kzdev.exerciciodeoop.model.Contato
 
 
-class ContactAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class ContactAdapter(private val onItemClicked: (Contato) -> Unit) :
+    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     // variavel privada que atribui o arrayList das informaçoes digitadas para utilizar junto ao modelo
     private var items: List<Contato> = ArrayList()
@@ -25,17 +26,14 @@ class ContactAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         when (holder) {
 
             is ContatoViewHolder -> {
-                holder.bind(items[position])
+                holder.bind(items[position], onItemClicked)
             }
         }
-
     }
-
 
     // funçao de resgate dos valores adiquiridos e passados para o arreylist
     override fun getItemCount(): Int {
         return items.size
-
     }
 
     fun setDataSet(contato: List<Contato>) {
@@ -54,13 +52,16 @@ class ContactAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         private val contatoData = itemView.findViewById<TextView>(R.id.text_data_nasc)
         private val contatoText = itemView.findViewById<TextView>(R.id.tx_nasc)
 
-
         // função bind que atribui o formato das informaçoes de acordo com o modelo contato
-        fun bind(contato: Contato) {
+        fun bind(contato: Contato, onItemClicked: (Contato) -> Unit) {
             contatoName.text = contato.name
             contatoData.text = contato.data
             contatoText.setText(R.string.text_nasc)
-        }
 
+            itemView.setOnClickListener {
+                onItemClicked(contato)
+
+            }
+        }
     }
 }
