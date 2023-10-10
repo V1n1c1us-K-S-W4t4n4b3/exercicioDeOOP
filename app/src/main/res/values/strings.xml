@@ -2,13 +2,14 @@
     <string name="app_name">exercicioDeOOP</string>
     <string name="title_activity_main">Meus Contatos</string>
     <string name="text_nasc_Contact">Nascimento: </string>
-    <string name="contact">Vinicius Watanabe</string>
-    <string name="data_nasc_contact">03/05/1998</string>
-    <string name="age_contact">(25 Anos)</string>
+    <string name="contact">Nome do Contato</string>
+    <string name="data_nasc_contact">00/00/0000</string>
+    <string name="age_contact">(00 Anos)</string>
     <string name="call_button">Ligar</string>
     <string name="cpf">CPF: </string>
     <string name="numb_cpf">000.000.000–00</string>
     <string name="tell">Número: </string>
     <string name="numb_tell">(00) 0000–0000</string>
+    <string name="age_placeholder">%1$s Anos</string>
     
 </resources>
